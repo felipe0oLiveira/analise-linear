@@ -26,6 +26,40 @@ O trabalho inclui:
 - Identificação das **barras mais rígidas** e interações entre graus de liberdade.  
 - Confirmação de que os **deslocamentos são pequenos**, característico de estruturas com alta rigidez.  
 
+## Exemplos Visuais
+
+<div align="center">
+
+### Estrutura e Carregamentos
+<img src="estrutura.jpg" alt="Estrutura e Carregamentos" width="60%"/>
+
+### Reações de Apoio
+<img src="reacoes.jpg" alt="Reações de Apoio" width="60%"/>
+
+</div>
+
+## Instruções de Uso
+
+### Pré-requisitos
+- Python 3.8 ou superior instalado
+- Bibliotecas necessárias: numpy, matplotlib (instale com `pip install numpy matplotlib`)
+
+### Como executar o código
+1. Clone ou baixe este repositório.
+2. Navegue até a pasta do projeto no terminal:
+   ```bash
+   cd "Caminho/para/Analise linear"
+   ```
+3. Execute o script principal:
+   ```bash
+   python "Análise linear matricial de pórtico plano.py"
+   ```
+4. Os resultados serão exibidos no terminal e, se aplicável, gráficos serão gerados na tela ou salvos como arquivos de imagem.
+
+### Observações
+- Certifique-se de que as imagens de entrada/saída estejam na mesma pasta do script, se necessário.
+- Para modificar os parâmetros do pórtico, edite as variáveis no início do arquivo Python.
+
 ## Colaboração  
 
 **Observação importante:** Este projeto foi desenvolvido em colaboração com uma aluna da UEFS, graduanda em Engenharia Civil, combinando conhecimentos teóricos e práticos para uma análise robusta e validada.  
@@ -36,6 +70,3 @@ Em suma, o estudo oferece uma **compreensão abrangente** do comportamento do p�
 **Repositório GitHub**  
 Acesse os códigos, dados e resultados detalhados neste repositório.  
 
-*(Inclua links ou instruções de uso, se aplicável.)*  
-
-*(Adicione badges, licença ou contato, se desejar.)*
