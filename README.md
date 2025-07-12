@@ -1,13 +1,41 @@
-# Análise Linear Matricial de Pórtico Plano
+# Análise Linear Matricial de Pórtico Plano  
 
-Este trabalho apresenta uma análise matricial detalhada de um pórtico hiperestático (uma estrutura com mais restrições do que o necessário para o equilíbrio estático), com o objetivo de compreender seu comportamento sob diferentes tipos de carregamento.
+Este trabalho apresenta uma análise matricial detalhada de um pórtico hiperestático (uma estrutura com mais restrições do que o necessário para o equilíbrio estático), com o objetivo de compreender seu comportamento sob diferentes tipos de carregamento.  
 
-A metodologia central envolve a discretização do pórtico em elementos de barra, para os quais são calculadas as matrizes de rigidez local. Essas matrizes, que representam a resistência de cada elemento à deformação, são determinadas com base nas propriedades do material (módulo de elasticidade, área da seção transversal, momento de inércia) e nas dimensões geométricas de cada barra.
+## Metodologia  
 
-Para integrar o comportamento de cada elemento no sistema global, são utilizadas matrizes de rotação, que transformam as rigidezes locais para um sistema de coordenadas global, considerando a orientação de cada barra no espaço. A partir dessas matrizes locais e de rotação, é montada a matriz de rigidez global da estrutura, que descreve a rigidez total do pórtico.
+A metodologia central envolve:  
+- **Discretização do pórtico** em elementos de barra.  
+- **Cálculo das matrizes de rigidez local**, que representam a resistência de cada elemento à deformação, com base nas propriedades do material (módulo de elasticidade, área da seção transversal, momento de inércia) e nas dimensões geométricas.  
+- **Aplicação de matrizes de rotação** para transformar as rigidezes locais em um sistema de coordenadas global, considerando a orientação de cada barra.  
+- **Montagem da matriz de rigidez global**, que descreve a rigidez total do pórtico.  
 
-Com a matriz de rigidez global estabelecida e os carregamentos aplicados (distribuídos e concentrados), o sistema de equações é resolvido para determinar os deslocamentos nodais (movimentos em cada ponto de conexão da estrutura) e as reações de apoio. A solução numérica obtida através do código Python foi validada por comparação com resultados de softwares comerciais de análise estrutural, como Ftool e Smath Solver.
+## Solução e Validação  
 
-O trabalho também inclui uma análise aprofundada dos esforços internos (forças normais, cortantes e momentos fletores) em cada barra, bem como a visualização da estrutura deformada em relação à sua configuração original. Os resultados permitem identificar as barras mais rígidas, entender as interações entre os graus de liberdade e confirmar que os deslocamentos são pequenos, o que é característico de estruturas com alta rigidez. Em suma, o estudo oferece uma compreensão abrangente do comportamento do pórtico sob carga, validada por diferentes abordagens computacionais.
+Com a matriz de rigidez global estabelecida e os carregamentos aplicados (distribuídos e concentrados), o sistema de equações é resolvido para determinar:  
+- **Deslocamentos nodais** (movimentos em cada ponto de conexão da estrutura).  
+- **Reações de apoio**.  
 
-**OBS:** Este trabalho foi realizado em colaboração com uma aluna de Engenharia Civil da UEFS. 
+A solução numérica obtida através do código Python foi **validada por comparação com resultados de softwares comerciais** (Ftool e Smath Solver), garantindo a precisão dos resultados.  
+
+## Análise de Resultados  
+
+O trabalho inclui:  
+- **Esforços internos** (forças normais, cortantes e momentos fletores) em cada barra.  
+- **Visualização da estrutura deformada** em relação à sua configuração original.  
+- Identificação das **barras mais rígidas** e interações entre graus de liberdade.  
+- Confirmação de que os **deslocamentos são pequenos**, característico de estruturas com alta rigidez.  
+
+## Colaboração  
+
+**Observação importante:** Este projeto foi desenvolvido em colaboração com uma aluna da UEFS, graduanda em Engenharia Civil, combinando conhecimentos teóricos e práticos para uma análise robusta e validada.  
+
+Em suma, o estudo oferece uma **compreensão abrangente** do comportamento do pórtico sob carga, com validação por diferentes abordagens computacionais.  
+
+---  
+**Repositório GitHub**  
+Acesse os códigos, dados e resultados detalhados neste repositório.  
+
+*(Inclua links ou instruções de uso, se aplicável.)*  
+
+*(Adicione badges, licença ou contato, se desejar.)*
